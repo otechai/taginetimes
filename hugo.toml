@@ -1,0 +1,164 @@
+baseURL = "https://taginetimes.com/"
+locale = "en-us"
+defaultContentLanguage = "en"
+title = "Tagine Times"
+theme = "congo"
+
+enableRobotsTXT = true
+enableEmoji = true
+summaryLength = 40
+
+[pagination]
+  pagerSize = 10
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[privacy]
+  [privacy.vimeo]
+    enableDNT = true
+  [privacy.x]
+    enableDNT = true
+  [privacy.youTube]
+    privacyEnhanced = true
+
+[services]
+  [services.x]
+    disableInlineCSS = true
+
+[params]
+  # -- Brand & metadata --
+  description = "Tagine Times — Moroccan satire, fully sourced. Real bureaucracy, real contradictions, zero fake scandals."
+  keywords = [
+    "Morocco satire",
+    "Moroccan satire",
+    "Morocco satire news",
+    "Morocco political satire",
+    "Moroccan satire site",
+    "Morocco comedy",
+    "Morocco humor blog",
+    "Darija satire",
+    "Morocco bureaucracy jokes",
+    "Moroccan news satire",
+    "civic satire Morocco",
+    "Tagine Times"
+  ]
+  images = ["img/profile.png"]
+  dateFormat = "2 January 2006"
+  mainSections = ["posts"]
+
+  colorScheme = "fire"
+  defaultAppearance = "light"
+  autoSwitchAppearance = true
+
+  enableSearch = true
+  enableCodeCopy = true
+  enableImageLazyLoading = true
+  enableImageWebp = true
+  enableQuicklink = true
+  fingerprintAlgorithm = "sha256"
+
+  [params.author]
+    name = "The Tagine Times"
+    image = "img/profile.png"
+    bio = "We love Morocco enough to make fun of it. Not the postcard Morocco — the one where you need a photocopy of a document to prove you possess the original. Facts are not jokes; reality is the raw material for jokes. If we can't source it, we don't run it."
+
+  [params.header]
+    layout = "basic" # valid options: basic, hamburger, hybrid, custom
+    logo = "img/profile.png"
+    showTitle = false
+
+  [params.footer]
+    showCopyright = true
+    showThemeAttribution = false
+    showAppearanceSwitcher = true
+    showScrollToTop = true
+
+  [params.homepage]
+    layout = "profile" # valid options: page, profile, custom
+    showRecent = true
+    recentLimit = 8
+
+  [params.article]
+    showDate = true
+    showDateUpdated = false
+    showAuthor = true
+    showBreadcrumbs = true
+    showDraftLabel = true
+    showEdit = false
+    editURL = "https://github.com/otechai/otechai.github.io/tree/main/content"
+    editAppendPath = true
+    showHeadingAnchors = true
+    showPagination = true
+    invertPagination = false
+    showReadingTime = true
+    showTableOfContents = true
+    showTaxonomies = true
+    showWordCount = false
+    showComments = false
+
+  [params.list]
+    showBreadcrumbs = true
+    showSummary = true
+    showTableOfContents = false
+    showTaxonomies = true
+    groupByYear = false
+    paginationWidth = 1
+
+  [params.sitemap]
+    excludedKinds = ["taxonomy", "term"]
+
+  [params.taxonomy]
+    showTermCount = true
+
+  [params.verification]
+    # google = ""
+    # bing = ""
+
+[menu]
+  [[menu.main]]
+    name = "Dispatches"
+    pageRef = "posts"
+    weight = 10
+  [[menu.main]]
+    name = "About"
+    pageRef = "about"
+    weight = 20
+  [[menu.main]]
+    name = "Tags"
+    pageRef = "tags"
+    weight = 30
+  [[menu.main]]
+    identifier = "search"
+    weight = 90
+    [menu.main.params]
+      action = "search"
+  [[menu.main]]
+    identifier = "appearance"
+    weight = 100
+    [menu.main.params]
+      action = "appearance"
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['\[', '\]'], ['$$', '$$']]
+          inline = [['\(', '\)']]
+  [markup.highlight]
+    noClasses = false
+    codeFences = true
+    guessSyntax = true
+    lineNos = true
+    style = "monokai"
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3

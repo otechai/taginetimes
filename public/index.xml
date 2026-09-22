@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Tagine Times</title>
+		<link>http://localhost:1313/</link>
+		<description>Recent content on Tagine Times</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Mon, 17 Aug 2026 09:00:00 +0100</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>The 35-Dirham Revolution: Why Every Moroccan Startup is Just Three Guys on a Scooter</title>
+				<link>http://localhost:1313/posts/moroccan-startups-delivery-apps-obsession/</link>
+				<pubDate>Mon, 17 Aug 2026 09:00:00 +0100</pubDate>
+				<guid>http://localhost:1313/posts/moroccan-startups-delivery-apps-obsession/</guid>
+				<description>How a nation of brilliant engineers managed to channel billions in venture capital into perfecting the art of transporting a single pastilla across Casablanca traffic in a thermal box.</description>
+			</item>
+			<item>
+				<title>About Tagine Times</title>
+				<link>http://localhost:1313/about/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/about/</guid>
+				<description>&lt;p&gt;Tagine Times is a Moroccan satire site. We love this country enough to make fun of it — not the postcard version, the real one: the photocopies, the paperwork, the contradictions everyone complains about and nobody stops doing.&lt;/p&gt;&#xA;&lt;p&gt;We write jokes, not news. Every joke starts from something real — a law, a statistic, a document, a quote — and we don&amp;rsquo;t publish anything we can&amp;rsquo;t back up. No fake scandals, no invented quotes, no manufactured outrage. If reality doesn&amp;rsquo;t hand us a good enough punchline, we don&amp;rsquo;t make one up.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Search</title>
+				<link>http://localhost:1313/search/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/search/</guid>
+				<description>Search this site.</description>
+			</item>
+	</channel>
+</rss>

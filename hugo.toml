@@ -1,4 +1,4 @@
-baseURL = "https://taginetimes.com/"
+baseURL = "https://otechai.github.io/taginetimes/"
 locale = "en-us"
 defaultContentLanguage = "en"
 title = "Tagine Times"
@@ -44,6 +44,7 @@ summaryLength = 40
     "Tagine Times"
   ]
   images = ["img/profile.png"]
+  defaultThemeColor = "#F97316"
   dateFormat = "2 January 2006"
   mainSections = ["posts"]
 
@@ -86,8 +87,6 @@ summaryLength = 40
     showBreadcrumbs = true
     showDraftLabel = true
     showEdit = false
-    editURL = "https://github.com/otechai/otechai.github.io/tree/main/content"
-    editAppendPath = true
     showHeadingAnchors = true
     showPagination = true
     invertPagination = false
@@ -138,6 +137,23 @@ summaryLength = 40
     weight = 100
     [menu.main.params]
       action = "appearance"
+
+[[menu.footer]]
+  name = "Satire Disclaimer"
+  pageRef = "disclaimer"
+  weight = 10
+[[menu.footer]]
+  name = "Editorial Policy"
+  pageRef = "editorial-policy"
+  weight = 20
+[[menu.footer]]
+  name = "Privacy"
+  pageRef = "privacy"
+  weight = 30
+[[menu.footer]]
+  name = "Terms"
+  pageRef = "terms"
+  weight = 40
 
 [taxonomies]
   tag = "tags"
